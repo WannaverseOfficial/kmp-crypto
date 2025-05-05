@@ -7,19 +7,27 @@ kmp-crypto is a Kotlin Multiplatform library designed to provide essential crypt
 
 ## ✨ Features
 ### 🔐 Asymmetric Cryptography
+[KDocs](https://wannaverseofficial.github.io/kmp-crypto/asymmetric/)
+
 * Ed25519 (digital signatures)
 * RSA (encryption & signing)
 
 ### 🔒 Symmetric Cryptography
+[KDocs](https://wannaverseofficial.github.io/kmp-crypto/symmetric/)
+
 * AES (supports ECB, CBC, CFB, OFB, CTR, GCM)
 
 ### Hashing
+[KDocs](https://wannaverseofficial.github.io/kmp-crypto/hashing/)
+
 * MD5
 * SHA-1
 * SHA-256
 * SHA-513
 
 ### 🧰 Core Utilities
+[KDocs](https://wannaverseofficial.github.io/kmp-crypto/core/)
+
 * Base58 / Base64 encoding
 * Bech32 encoding
 * ByteArray utilities
@@ -48,7 +56,7 @@ Planned features:
 > Need a feature? Make an issue and we'll add it to the roadmap!
 
 ## 📄 License
-MIT LICENSE. See LICENSE for details.
+MIT LICENSE. See [LICENSE](./LICENSE) for details.
 
 ## 🙌 Contributing
 Pull requests and feature requests are welcome!
