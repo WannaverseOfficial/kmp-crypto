@@ -1,6 +1,6 @@
 package com.wannaverse.crypto.asymmetric.ed25519
 
-actual class ED25519 {
+actual object ED25519 {
     actual fun generateKeyPair(): ED25519KeyPair {
         TODO("Not yet implemented")
     }

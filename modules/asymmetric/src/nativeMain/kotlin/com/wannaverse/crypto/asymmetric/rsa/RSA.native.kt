@@ -1,6 +1,6 @@
 package com.wannaverse.crypto.asymmetric.rsa
 
-actual class RSA {
+actual object RSA {
     actual fun generateKeyPair(keySize: Int): RSAKeyPair {
         TODO("Not yet implemented")
     }

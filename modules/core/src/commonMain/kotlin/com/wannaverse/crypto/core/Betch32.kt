@@ -1,10 +1,24 @@
 package com.wannaverse.crypto.core
 
+/**
+ * Utility class for Bech32 encoding and decoding.
+ *
+ * Bech32 is a checksummed base32 encoding used widely in blockchain addresses (e.g., Bitcoin SegWit).
+ * This implementation follows the Bech32 specification for encoding/decoding with strong validation.
+ */
 class Betch32 {
     private val BECH32_ALPHABET = "qpzry9x8gf2tvdw0s3jn54khce6mua7l"
     private val BECH32_GENERATOR =
         intArrayOf(0x3b6a57b2, 0x26508e6d, 0x1ea119fa, 0x3d4233dd, 0x2a1462b3)
 
+    /**
+     * Encodes the given HRP and 5-bit data into a Bech32 string.
+     *
+     * @param hrp The human-readable part (e.g., "bc" or "tb").
+     * @param data A byte array of 5-bit values (each must be in range 0..31).
+     * @return The Bech32-encoded string.
+     * @throws IllegalArgumentException If input values are invalid or out of range.
+     */
     fun toBech32(hrp: String, data: ByteArray): String {
         require(hrp.isNotEmpty() && hrp.length <= 83) { "HRP length must be 1-83 characters" }
         require(hrp.all { it.code in 33..126 && it != '1' }) { "Invalid HRP character" }
@@ -29,6 +43,13 @@ class Betch32 {
         return result
     }
 
+    /**
+     * Decodes a Bech32-encoded string into its HRP and original 5-bit data.
+     *
+     * @param bech32 The Bech32-encoded string.
+     * @return A pair of [HRP, data] with checksum removed.
+     * @throws IllegalArgumentException If the input is invalid or checksum fails.
+     */
     fun fromBech32(bech32: String): Pair<String, ByteArray> {
         require(bech32.length >= 8 && bech32.length <= 90) {
             "Bech32 string length must be 8-90 characters"
@@ -85,7 +106,12 @@ class Betch32 {
         return result.toByteArray()
     }
 
-
+    /**
+     * Converts a byte array to an array of 5-bit values, suitable for Bech32 encoding.
+     *
+     * @param bytes A standard byte array.
+     * @return A 5-bit grouped byte array.
+     */
     fun convertFrom5Bit(data: ByteArray): ByteArray {
         require(data.all { it.toInt() in 0..31 }) { "Data contains values outside 0-31 range" }
 

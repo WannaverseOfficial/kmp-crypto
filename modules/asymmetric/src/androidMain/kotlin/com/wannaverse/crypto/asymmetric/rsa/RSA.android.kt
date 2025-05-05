@@ -9,7 +9,7 @@ import java.security.spec.PKCS8EncodedKeySpec
 import java.security.spec.X509EncodedKeySpec
 import javax.crypto.Cipher
 
-actual class RSA {
+actual object RSA {
     actual fun generateKeyPair(keySize: Int): RSAKeyPair {
         val keyGen = KeyPairGenerator.getInstance("RSA")
         keyGen.initialize(keySize)
