@@ -1,0 +1,8 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.wannaverse.crypto.hashing////PointingToDeclaration/hashing/com.wannaverse.crypto.hashing/index.html
+$dokka.location:com.wannaverse.crypto.hashing//md5/#kotlin.ByteArray/PointingToDeclaration/hashing/com.wannaverse.crypto.hashing/md5.html
+$dokka.location:com.wannaverse.crypto.hashing//sha1/#kotlin.ByteArray/PointingToDeclaration/hashing/com.wannaverse.crypto.hashing/sha1.html
+$dokka.location:com.wannaverse.crypto.hashing//sha256/#kotlin.ByteArray/PointingToDeclaration/hashing/com.wannaverse.crypto.hashing/sha256.html
+$dokka.location:com.wannaverse.crypto.hashing//sha512/#kotlin.ByteArray/PointingToDeclaration/hashing/com.wannaverse.crypto.hashing/sha512.html
+com.wannaverse.crypto.hashing

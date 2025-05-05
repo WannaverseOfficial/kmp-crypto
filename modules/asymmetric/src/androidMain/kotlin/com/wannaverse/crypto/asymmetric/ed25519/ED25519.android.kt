@@ -5,7 +5,7 @@ import java.security.KeyPairGenerator
 import java.security.Signature
 import java.security.spec.PKCS8EncodedKeySpec
 
-actual class ED25519 {
+actual object ED25519 {
     actual fun generateKeyPair(): ED25519KeyPair {
         val keyGen = KeyPairGenerator.getInstance("Ed25519")
         val keyPair = keyGen.generateKeyPair()

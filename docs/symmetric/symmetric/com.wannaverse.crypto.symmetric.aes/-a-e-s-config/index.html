@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AESConfig</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../../index.html">
+                    symmetric
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active=""
+                        data-filter=":modules:symmetric:dokkaHtml/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":modules:symmetric:dokkaHtml/commonMain"
+                                       data-filter=":modules:symmetric:dokkaHtml/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    symmetric
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="symmetric::com.wannaverse.crypto.symmetric.aes/AESConfig///PointingToDeclaration//-1079153052">
+  <div class="breadcrumbs"><a href="../../../index.html">symmetric</a><span class="delimiter">/</span><a href="../index.html">com.wannaverse.crypto.symmetric.aes</a><span class="delimiter">/</span><span class="current">AESConfig</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>AESConfig</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":modules:symmetric:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">AESConfig</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>mode<span class="token operator">: </span><a href="../-a-e-s-mode/index.html">AESMode</a><span class="token operator"> = </span>AESMode.GCM<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>keySize<span class="token operator">: </span><a href="../-key-size/index.html">KeySize</a><span class="token operator"> = </span>KeySize.AES_256<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>iv<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>aad<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>tagLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">128</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Configuration class for AES encryption settings.</p><p class="paragraph">This class holds the configuration parameters necessary to perform AES encryption or decryption. The configuration allows setting various AES modes, key sizes, initialization vectors (IV), additional authenticated data (AAD), and tag length (for GCM mode). These settings control the behavior and security of AES operations.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="164261669%2FConstructors%2F-1079153052" anchor-label="AESConfig" id="164261669%2FConstructors%2F-1079153052" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":modules:symmetric:dokkaHtml/commonMain" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-e-s-config.html"><span><span>AESConfig</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="164261669%2FConstructors%2F-1079153052"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":modules:symmetric:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="../-a-e-s-mode/index.html">AESMode</a><span class="token operator"> = </span>AESMode.GCM<span class="token punctuation">, </span></span><span class="parameter ">keySize<span class="token operator">: </span><a href="../-key-size/index.html">KeySize</a><span class="token operator"> = </span>KeySize.AES_256<span class="token punctuation">, </span></span><span class="parameter ">iv<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">aad<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">tagLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">128</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="102324984%2FProperties%2F-1079153052" anchor-label="aad" id="102324984%2FProperties%2F-1079153052" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":modules:symmetric:dokkaHtml/commonMain" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="aad.html"><span><span>aad</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="102324984%2FProperties%2F-1079153052"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":modules:symmetric:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="aad.html">aad</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">Additional Authenticated Data (AAD) used in <a href="../-a-e-s-mode/-g-c-m/index.html">AESMode.GCM</a> mode (default is <code class="lang-kotlin">null</code>).     This data is not encrypted but is authenticated as part of the GCM operation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-139273135%2FProperties%2F-1079153052" anchor-label="iv" id="-139273135%2FProperties%2F-1079153052" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":modules:symmetric:dokkaHtml/commonMain" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="iv.html"><span><span>iv</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-139273135%2FProperties%2F-1079153052"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":modules:symmetric:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="iv.html">iv</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><p class="paragraph">The initialization vector (IV) used in some AES modes (default is <code class="lang-kotlin">null</code>).     Used in modes like CBC, CFB, and OFB, and must be a securely generated random value.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-44573636%2FProperties%2F-1079153052" anchor-label="keySize" id="-44573636%2FProperties%2F-1079153052" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":modules:symmetric:dokkaHtml/commonMain" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="key-size.html"><span>key</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-44573636%2FProperties%2F-1079153052"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":modules:symmetric:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="key-size.html">keySize</a><span class="token operator">: </span><a href="../-key-size/index.html">KeySize</a></div><div class="brief "><p class="paragraph">The size of the AES key (default is <a href="../-key-size/-a-e-s_256/index.html">KeySize.AES_256</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="465026139%2FProperties%2F-1079153052" anchor-label="mode" id="465026139%2FProperties%2F-1079153052" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":modules:symmetric:dokkaHtml/commonMain" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mode.html"><span><span>mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="465026139%2FProperties%2F-1079153052"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":modules:symmetric:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="mode.html">mode</a><span class="token operator">: </span><a href="../-a-e-s-mode/index.html">AESMode</a></div><div class="brief "><p class="paragraph">The AES cipher mode to be used (default is <a href="../-a-e-s-mode/-g-c-m/index.html">AESMode.GCM</a>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-815874980%2FProperties%2F-1079153052" anchor-label="tagLength" id="-815874980%2FProperties%2F-1079153052" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":modules:symmetric:dokkaHtml/commonMain" data-filterable-set=":modules:symmetric:dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tag-length.html"><span>tag</span><wbr></wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-815874980%2FProperties%2F-1079153052"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":modules:symmetric:dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="tag-length.html">tagLength</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">128</span></div><div class="brief "><p class="paragraph">The length of the authentication tag in bits for <a href="../-a-e-s-mode/-g-c-m/index.html">AESMode.GCM</a> (default is 128).     Valid tag lengths for GCM are typically 96, 104, 112, 120, and 128 bits.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2025 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

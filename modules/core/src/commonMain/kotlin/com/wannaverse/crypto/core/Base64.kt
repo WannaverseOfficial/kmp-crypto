@@ -1,8 +1,22 @@
 package com.wannaverse.crypto.core
 
+/**
+ * Utility object for Base64 encoding and decoding.
+ *
+ * Supports both standard and URL-safe Base64 variants. This implementation does not include padding (`=`),
+ * which is often optional in URL-safe formats but may be required for strict decoders.
+ */
 object Base64 {
     private const val BASE64_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 
+    /**
+     * Encodes the given byte array into a standard Base64 string.
+     *
+     * Note: This implementation does not append padding characters (`=`).
+     *
+     * @param bytes The binary data to encode.
+     * @return The Base64-encoded string.
+     */
     fun toBase64(bytes: ByteArray): String {
         val result = StringBuilder()
         for (i in bytes.indices step 3) {
@@ -17,9 +31,26 @@ object Base64 {
         return result.toString()
     }
 
+    /**
+     * Encodes the given byte array into a URL-safe Base64 string.
+     *
+     * Replaces '+' with '-', '/' with '_', and strips trailing `=` padding characters.
+     *
+     * @param bytes The binary data to encode.
+     * @return The URL-safe Base64-encoded string.
+     */
     fun toBase64UrlSafe(bytes: ByteArray): String =
         toBase64(bytes).replace('+', '-').replace('/', '_').trimEnd('=')
 
+    /**
+     * Decodes a Base64-encoded string into a byte array.
+     *
+     * Accepts both standard and URL-safe Base64 variants (without padding).
+     *
+     * @param base64 The Base64 string to decode.
+     * @return The decoded byte array.
+     * @throws IllegalArgumentException If the string contains invalid Base64 characters.
+     */
     fun fromBase64(base64: String): ByteArray {
         val cleanInput = base64.replace("[-_]", "+").replace("=", "")
         val result = mutableListOf<Byte>()
