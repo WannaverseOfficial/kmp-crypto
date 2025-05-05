@@ -1,0 +1,39 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519////PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519/ED25519///PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/-e-d25519/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519/ED25519/generateKeyPair/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/-e-d25519/generate-key-pair.html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519/ED25519/sign/#kotlin.ByteArray#kotlin.ByteArray/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/-e-d25519/sign.html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519/ED25519/verify/#kotlin.ByteArray#kotlin.ByteArray#kotlin.ByteArray/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/-e-d25519/verify.html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519/ED25519KeyPair///PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/-e-d25519-key-pair/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519/ED25519KeyPair/ED25519KeyPair/#kotlin.ByteArray#kotlin.ByteArray/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/-e-d25519-key-pair/-e-d25519-key-pair.html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519/ED25519KeyPair/privateKey/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/-e-d25519-key-pair/private-key.html
+$dokka.location:com.wannaverse.crypto.asymmetric.ed25519/ED25519KeyPair/publicKey/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.ed25519/-e-d25519-key-pair/public-key.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa////PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSA///PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSA/decrypt/#kotlin.ByteArray#kotlin.ByteArray#com.wannaverse.crypto.asymmetric.rsa.RSAPadding/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a/decrypt.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSA/encrypt/#kotlin.ByteArray#kotlin.ByteArray#com.wannaverse.crypto.asymmetric.rsa.RSAPadding/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a/encrypt.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSA/generateKeyPair/#kotlin.Int/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a/generate-key-pair.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSA/sign/#kotlin.ByteArray#kotlin.ByteArray#com.wannaverse.crypto.asymmetric.rsa.RSASignaturePadding/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a/sign.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSA/verify/#kotlin.ByteArray#kotlin.ByteArray#kotlin.ByteArray#com.wannaverse.crypto.asymmetric.rsa.RSASignaturePadding/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a/verify.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAKeyPair///PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-key-pair/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAKeyPair/RSAKeyPair/#kotlin.ByteArray#kotlin.ByteArray/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-key-pair/-r-s-a-key-pair.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAKeyPair/privateKey/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-key-pair/private-key.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAKeyPair/publicKey/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-key-pair/public-key.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAPadding.OAEP_SHA1///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-padding/-o-a-e-p_-s-h-a1/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAPadding.OAEP_SHA256///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-padding/-o-a-e-p_-s-h-a256/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAPadding.PKCS1///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-padding/-p-k-c-s1/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAPadding///PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-padding/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAPadding/entries/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-padding/entries.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAPadding/paddingString/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-padding/padding-string.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAPadding/valueOf/#kotlin.String/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-padding/value-of.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSAPadding/values/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-padding/values.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSASignaturePadding.PKCS1_SHA256///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-signature-padding/-p-k-c-s1_-s-h-a256/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSASignaturePadding.PSS_SHA256///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-signature-padding/-p-s-s_-s-h-a256/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSASignaturePadding///PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-signature-padding/index.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSASignaturePadding/entries/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-signature-padding/entries.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSASignaturePadding/signatureString/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-signature-padding/signature-string.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSASignaturePadding/valueOf/#kotlin.String/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-signature-padding/value-of.html
+$dokka.location:com.wannaverse.crypto.asymmetric.rsa/RSASignaturePadding/values/#/PointingToDeclaration/asymmetric/com.wannaverse.crypto.asymmetric.rsa/-r-s-a-signature-padding/values.html
+com.wannaverse.crypto.asymmetric.ed25519
+com.wannaverse.crypto.asymmetric.rsa
