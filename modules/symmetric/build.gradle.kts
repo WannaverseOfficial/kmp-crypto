@@ -55,10 +55,10 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates(group.toString(), "kmp-crypto-asymmetric", version.toString())
+    coordinates(group.toString(), "kmp-crypto-symmetric", version.toString())
 
     pom {
-        name = "kmp-crypto-asymmetric"
+        name = "kmp-crypto-symmetric"
         description = "A symmetric cryptographic library for Kotlin Multiplatform"
         inceptionYear = "2025"
         url = "https://github.com/WannaverseOfficial/kmp-crypto"
