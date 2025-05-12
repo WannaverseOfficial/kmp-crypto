@@ -1,10 +1,15 @@
+import com.vanniktech.maven.publish.SonatypeHost
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.dokka)
+    alias(libs.plugins.publishing)
 }
+
+group = "com.wannaverse"
+version = "0.0.1"
 
 kotlin {
     androidTarget {
@@ -42,6 +47,40 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+mavenPublishing {
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+
+    signAllPublications()
+
+    coordinates(group.toString(), "kmp-crypto-symmetric", version.toString())
+
+    pom {
+        name = "kmp-crypto-symmetric"
+        description = "A symmetric cryptographic library for Kotlin Multiplatform"
+        inceptionYear = "2025"
+        url = "https://github.com/WannaverseOfficial/kmp-crypto"
+        licenses {
+            license {
+                name = "MIT License"
+                url = "https://opensource.org/licenses/MIT"
+                distribution = "https://opensource.org/licenses/MIT"
+            }
+        }
+        developers {
+            developer {
+                id = "Wannaverse"
+                name = "wannaverse"
+                url = "https://github.com/WannaverseOfficial"
+            }
+        }
+        scm {
+            url = "https://github.com/WannaverseOfficial/kmp-crypto"
+            connection = "scm:git:git://github.com/WannaverseOfficial/kmp-crypto.git"
+            developerConnection = "scm:git:ssh://git@github.com/WannaverseOfficial/kmp-crypto.git"
+        }
     }
 }
 
