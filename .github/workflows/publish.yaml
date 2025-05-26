@@ -1,7 +1,6 @@
 name: Publish to Maven Central
 on:
   workflow_dispatch:
-  pull_request:
   release:
     types: [released, prereleased]
 
