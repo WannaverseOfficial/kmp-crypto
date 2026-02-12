@@ -52,7 +52,7 @@ object Base64 {
      * @throws IllegalArgumentException If the string contains invalid Base64 characters.
      */
     fun fromBase64(base64: String): ByteArray {
-        val cleanInput = base64.replace("[-_]", "+").replace("=", "")
+        val cleanInput = base64.replace('-', '+').replace('_', '/').trimEnd('=')
         val result = mutableListOf<Byte>()
         var i = 0
         while (i < cleanInput.length) {
