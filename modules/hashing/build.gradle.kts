@@ -27,6 +27,9 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
         }
+        androidMain.dependencies {
+            libs.bcprov.jdk18on
+        }
     }
 }
 
