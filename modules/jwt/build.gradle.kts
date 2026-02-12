@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.dokka)
     alias(libs.plugins.publishing)
+    alias(libs.plugins.kotlinxSerialization)
 }
 
 group = "com.wannaverse"
@@ -26,15 +27,16 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-        }
-        nativeMain.dependencies {
+            implementation(projects.modules.core)
             implementation(projects.modules.hashing)
+            implementation(projects.modules.asymmetric)
+            implementation(libs.kotlinx.serialization.json)
         }
     }
 }
 
 android {
-    namespace = "com.wannaverse.crypto.asymmetric"
+    namespace = "com.wannaverse.crypto.jwt"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
@@ -58,11 +60,11 @@ mavenPublishing {
 
     signAllPublications()
 
-    coordinates(group.toString(), "kmp-crypto-asymmetric", version.toString())
+    coordinates(group.toString(), "kmp-crypto-jwt", version.toString())
 
     pom {
-        name = "kmp-crypto-asymmetric"
-        description = "An asymmetric cryptographic library for Kotlin Multiplatform"
+        name = "kmp-crypto-jwt"
+        description = "A JWT (RFC 7519) library for Kotlin Multiplatform"
         inceptionYear = "2025"
         url = "https://github.com/WannaverseOfficial/kmp-crypto"
         licenses {
@@ -88,5 +90,5 @@ mavenPublishing {
 }
 
 tasks.dokkaHtml {
-    outputDirectory.set(file("${rootDir}/docs/asymmetric"))
+    outputDirectory.set(file("${rootDir}/docs/jwt"))
 }
