@@ -27,6 +27,9 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
         }
+        nativeMain.dependencies {
+            implementation(projects.modules.hashing)
+        }
     }
 }
 
